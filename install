@@ -587,10 +587,7 @@ cd
 # install fail2ban
 apt-get update;apt-get -y install fail2ban;service fail2ban restart;
 
-# Instal (D)DoS Deflate
-if [ -d '/usr/local/ddos' ]; then
-	echo; echo; echo "Please un-install the previous version first"
-	exit 0
+
 else
 	mkdir /usr/local/ddos
 fi
